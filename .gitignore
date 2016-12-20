@@ -1,0 +1,8 @@
+.gradle/
+.settings/
+.project
+.classpath
+bin/
+demo-java-config-client1/build/
+demo-java-config-client2/build/
+demo-java-config-server/build/

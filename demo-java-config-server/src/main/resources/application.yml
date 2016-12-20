@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: configServer
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          searchLocations: file:///D:/demo-java-config/config-repo/
+#          searchLocations: ${CONFIG_LOCATION}
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/JHerculesqz/demo-java-configserver-repo
+          username: JHercules_qz@qq.com
+          password: JHercules123

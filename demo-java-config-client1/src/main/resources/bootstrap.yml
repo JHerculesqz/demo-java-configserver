@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: config-client1
+  cloud:
+    config: 
+      uri: http://ShitConfigServer:8888

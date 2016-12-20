@@ -1,0 +1,1 @@
+docker run --name ShitConfigServer --net=crystal -p 8888:8888 -i -t jherculesqz/demo-java-config-server java -jar app.jar

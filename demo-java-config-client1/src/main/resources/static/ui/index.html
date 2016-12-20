@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZipkinDemo</title>
+    <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/component/AjaxUtils.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$("#btnRefresh").click(function(){
+    			ajaxUtils.postAjax("/refresh", {}, function(res){
+    				console.log(res);
+    			});
+    		});
+    		
+    		$("#btnPost").click(function(){
+    			ajaxUtils.postAjax("/hello", {}, function(res){
+    				console.log(res);
+    			});
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<button id="btnRefresh">刷新配置</button><br/>
+	<button id="btnPost">验证穿透Docker的post请求</button><br/>
+</body>
+</html>

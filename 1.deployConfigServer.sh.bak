@@ -1,0 +1,1 @@
+docker run --name ShitConfigServer --net=crystal -p 8888:8888 -e CONFIG_LOCATION="file:///Users/hou/Documents/1.Monkey/demo-java-config/config-repo/" -e SPRING_PROFILES_ACTIVE=native -v "/Users/hou/Documents/1.Monkey/demo-java-config/config-repo/" -i -t jherculesqz/demo-java-config-server java -jar app.jar

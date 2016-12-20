@@ -1,0 +1,1 @@
+./gradlew clean && ./gradlew build && java -jar build/libs/demo-java-config-client1-1.0.0.jar
